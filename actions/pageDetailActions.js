@@ -4,6 +4,7 @@ import * as Permissions from 'expo-permissions';
 import axios from 'axios'
 import { Alert } from 'react-native';
 
+// special
 export const FetchPageDetailRequest = (pageId) => {
     const taskURI = '/pages/' + pageId
     return (dispatch) => {
@@ -72,7 +73,7 @@ export const FetchPageVideosSuccess = (videos) => {
         payload: videos
     }
 }
-//
+// special
 export const FetchPagePhotosRequest = (pageId) => {
     const taskURI = `/pages/${pageId}/page_posts`
     return (dispatch) => {

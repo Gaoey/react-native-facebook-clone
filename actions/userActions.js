@@ -1,5 +1,6 @@
 import { userActions } from '../constants'
 import axios from 'axios'
+// special
 export const LoginRequest = (username, password) => {
     const taskURI = `/users?username=${username}&password=${password}`
     return (dispatch) => {
@@ -68,6 +69,7 @@ export const FetchHighLightPhotosSuccess = (photos) => {
     }
 }
 //Friends
+// special
 export const FetchFriendsRequest = (userId) => {
     const taskURI = `/users/${userId}`
     return (dispatch) => {
@@ -106,6 +108,7 @@ export const FetchFriendsSuccess = (friends) => {
     }
 }
 //Profie posts
+// special
 export const FetchProfilePostsRequest = (userId) => {
     const taskURI = `users/${userId}/posts?_expand=user`
     return (dispatch) => {

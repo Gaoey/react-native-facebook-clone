@@ -5,6 +5,7 @@ import axios from 'axios'
 import { Alert } from 'react-native';
 const taskURI = '/'
 //waiting for next solution
+// no need to use this way
 export const FetchSystemImagesRequest = () => {
     const getPhotos = (dispatch) => {
         MediaLibrary.getAssetsAsync({

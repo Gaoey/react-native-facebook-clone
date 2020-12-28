@@ -80,7 +80,6 @@ const homeTab = () => {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false, ...TransitionPresets.ModalSlideFromBottomIOS, gestureResponseDistance: { vertical: 800 } }}>
 			<Stack.Screen name="Home" component={Home} />
-
 			<Stack.Screen options={{ cardStyle: { backgroundColor: 'transparent' } }} name="Comments" component={Comments} />
 		</Stack.Navigator>
 	)

@@ -1,6 +1,8 @@
 import { searchingActions } from '../constants'
 import axios from 'axios'
 
+// vewry special
+// special
 export const commonSearchRequest = (keyword) => {
     return dispatch => {
         dispatch(SearchGroupsRequest(keyword))
@@ -9,6 +11,7 @@ export const commonSearchRequest = (keyword) => {
         dispatch(SearchUsersRequest(keyword))
     }
 }
+// special
 export const SearchUsersRequest = (keyword) => {
     const taskURI = '/users?name_like=' + keyword.trim()
     return (dispatch) => {
@@ -62,7 +65,7 @@ export const SearchPagesSuccess = (pages) => {
     }
 }
 //
-//
+// special
 export const SearchPostsRequest = (keyword) => {
     const taskURI = '/posts?_expand=user&content_like=' + keyword
     return (dispatch) => {
@@ -87,7 +90,7 @@ export const SearchPostsSuccess = (posts) => {
     }
 }
 //
-//
+// special
 export const SearchGroupsRequest = (keyword) => {
     const taskURI = '/groups?name_like=' + keyword
     return (dispatch) => {
